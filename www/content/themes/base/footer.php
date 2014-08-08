@@ -12,9 +12,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'base' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'base' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'base' ), 'base', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+      <p>&copy; Andrew Cocker 2014   |   <a href="mailto:me@andrew-cocker.co.uk">me@andrew-cocker.co.uk</a></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

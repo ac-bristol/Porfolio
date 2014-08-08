@@ -1,4 +1,4 @@
-/*! Andy - v0.1.0 - 2014-07-28 *//*! Respond.js v1.4.2: min/max-width media query polyfill
+/*! Andy - v0.1.0 - 2014-08-06 *//*! Respond.js v1.4.2: min/max-width media query polyfill
  * Copyright 2014 Scott Jehl
  * Licensed under MIT
  * http://j.mp/respondjs */

@@ -17,14 +17,6 @@ module.exports = function(grunt) {
         dest: 'js/build.js',
       },
     },
-    casperjs: {
-      options: {
-        async: {
-          parallel: false
-        }
-      },
-      files: ['js/testing/*.js']
-    },
     uglify: {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
@@ -39,19 +31,24 @@ module.exports = function(grunt) {
         options: {                       // Target options
           style: 'expanded'
         },
-        files: {                         // Dictionary of files
-          'main.css': 'main.scss',       // 'destination': 'source'
-          'widgets.css': 'widgets.scss'
-        }
+        files: [{
+            expand: true,
+            cwd: 'sass',
+            src: ['main.scss'],
+            dest: 'css',
+            ext: '.css'
+        }]
       }
     },
     watch: {
-      less: {
-        files: [
-          'css/*.less',
-          'css/**/*.less'
-        ],
-        tasks: ['less:development']
+      uglify: {
+        files: ['js/main.js'],
+        tasks: ['uglify'],
+      },
+      sass: {
+      // We watch and compile sass files as normal but don't live reload here
+        files: ['sass/*.scss'],
+        tasks: ['sass'],
       },
       livereload: {
         // Browser live reloading
@@ -60,7 +57,8 @@ module.exports = function(grunt) {
           livereload: false
         },
         files: [
-          'css/style.css',
+          'sass/*',
+          'css/main.css',
           'js/main.js',
           'templates/*.php',
           '*.php'
@@ -75,9 +73,9 @@ module.exports = function(grunt) {
   //grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-casperjs');
+  //grunt.loadNpmTasks('grunt-casperjs');
 
   // Default task(s).
-  grunt.registerTask('default', ['concat','uglify']);
+  grunt.registerTask('default', ['concat','uglify', 'sass']);
 
 };

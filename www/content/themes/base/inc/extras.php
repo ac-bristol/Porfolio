@@ -87,3 +87,5 @@ function base_setup_author() {
 	}
 }
 add_action( 'wp', 'base_setup_author' );
+
+

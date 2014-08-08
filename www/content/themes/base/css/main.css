@@ -342,7 +342,7 @@ h3.small-header {
   }
 }
 
-.small-text, footer p {
+.small-text, footer p, .home #content #work-row .ajax-load-more-wrap ul li p, .home #content #blog-row .ajax-load-more-wrap ul li p.entry-meta {
   font-size: 12px;
   font-size: 1.2rem;
   font-weight: 500;
@@ -350,7 +350,7 @@ h3.small-header {
   line-height: 1.8rem;
 }
 @media all and (min-width: 50em) {
-  .small-text, footer p {
+  .small-text, footer p, .home #content #work-row .ajax-load-more-wrap ul li p, .home #content #blog-row .ajax-load-more-wrap ul li p.entry-meta {
     font-size: 14px;
     font-size: 1.4rem;
     line-height: 20px;
@@ -511,7 +511,7 @@ and open the template in the editor.
 }
 
 #home-intro {
-  background: url("/content/themes/base/images/home-image.jpg") no-repeat center center;
+  background: url("/content/themes/base/images/home-image-2.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -671,6 +671,9 @@ footer {
   z-index: 1;
 }
 .home #content #work-row .ajax-load-more-wrap ul li p {
+  color: #959a9e;
+}
+.home #content #work-row .ajax-load-more-wrap ul li p.entry-meta {
   display: none;
 }
 .home #content #work-row .ajax-load-more-wrap ul li h3 {
@@ -718,8 +721,12 @@ footer {
 .home #content #blog-row .ajax-load-more-wrap ul li h3 a:hover {
   border-bottom: 1px solid #313131;
 }
+.home #content #blog-row .ajax-load-more-wrap ul li p {
+  display: none;
+}
 .home #content #blog-row .ajax-load-more-wrap ul li p.entry-meta {
   color: #959a9e;
+  display: block;
 }
 
 .alm-listing {
