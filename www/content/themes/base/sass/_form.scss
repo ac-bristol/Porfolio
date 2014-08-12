@@ -1,0 +1,32 @@
+
+form {
+  padding: 10px 0;
+  label {
+    @extend .italic-grey;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+  input,textarea {
+    display:block;
+  }
+  input[type="submit"] {
+    background:$light-blue;
+    border:none;
+    color:$white;
+    padding:5px 15px;
+    &:hover {
+      background:$blue;
+    }
+  }
+  p {
+    margin-bottom:10px;
+    &.form-allowed-tags {
+      @extend .small-text;
+    }
+    &.form-submit {
+      padding-top:10px;
+    }
+  }
+}
+

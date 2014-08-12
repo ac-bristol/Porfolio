@@ -265,6 +265,29 @@ a:hover {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 26px;
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 3.2rem;
+}
+@media all and (min-width: 50em) {
+  h1 {
+    font-size: 36px;
+    font-size: 3.6rem;
+    line-height: 5rem;
+  }
+}
+@media all and (min-width: 73em) {
+  h1 {
+    font-size: 42px;
+    font-size: 4.2rem;
+    line-height: 5.4rem;
+  }
+}
+h1.entry-title {
+  margin-bottom: 30px;
+}
 h1.tag-line {
   font-size: 26px;
   font-size: 2.6rem;
@@ -286,6 +309,12 @@ h1.tag-line {
   }
 }
 
+h2 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 26px;
+  line-height: 2.6rem;
+}
 h2.home-col-header {
   font-size: 14px;
   font-size: 1.4rem;
@@ -298,7 +327,21 @@ h2.home-col-header {
     font-size: 1.6rem;
   }
 }
+@media all and (min-width: 50em) {
+  h2 {
+    font-size: 24px;
+    font-size: 2.4rem;
+    line-height: 28px;
+    line-height: 2.8rem;
+  }
+}
 
+h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 22px;
+  line-height: 2.2rem;
+}
 h3.small-header {
   font-size: 14px;
   font-size: 1.4rem;
@@ -307,6 +350,14 @@ h3.small-header {
   h3.small-header {
     font-size: 16px;
     font-size: 1.6rem;
+  }
+}
+@media all and (min-width: 50em) {
+  h3 {
+    font-size: 20px;
+    font-size: 2rem;
+    line-height: 24px;
+    line-height: 2.4rem;
   }
 }
 
@@ -342,15 +393,15 @@ h3.small-header {
   }
 }
 
-.small-text, footer p, .home #content #work-row .ajax-load-more-wrap ul li p, .home #content #blog-row .ajax-load-more-wrap ul li p.entry-meta {
-  font-size: 12px;
-  font-size: 1.2rem;
+.small-text, form p.form-allowed-tags, footer.site-footer p, .home #content #work-row .ajax-load-more-wrap ul li p, .home #content #blog-row .ajax-load-more-wrap ul li p.entry-meta, .single-post #content #primary #main article.post .entry-footer, .single-post #content #primary .post-sidebar #secondary .widget_recent_entries a, .single-post #content #primary .post-sidebar #secondary .widget_recent_entries span, .single-post #content #primary .post-sidebar .sidebar-contact p {
+  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 500;
   line-height: 18px;
   line-height: 1.8rem;
 }
 @media all and (min-width: 50em) {
-  .small-text, footer p, .home #content #work-row .ajax-load-more-wrap ul li p, .home #content #blog-row .ajax-load-more-wrap ul li p.entry-meta {
+  .small-text, form p.form-allowed-tags, footer.site-footer p, .home #content #work-row .ajax-load-more-wrap ul li p, .home #content #blog-row .ajax-load-more-wrap ul li p.entry-meta, .single-post #content #primary #main article.post .entry-footer, .single-post #content #primary .post-sidebar #secondary .widget_recent_entries a, .single-post #content #primary .post-sidebar #secondary .widget_recent_entries span, .single-post #content #primary .post-sidebar .sidebar-contact p {
     font-size: 14px;
     font-size: 1.4rem;
     line-height: 20px;
@@ -382,6 +433,11 @@ h3.small-header {
   color: white;
 }
 
+.italic-grey, form label {
+  color: #666666;
+  font-style: italic;
+}
+
 .button-style, .home #content .row .alm-btn-wrap button {
   border-bottom: 1px solid #959a9e;
   color: #313131;
@@ -399,6 +455,37 @@ h3.small-header {
     font-size: 16px;
     font-size: 1.6rem;
   }
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+form {
+  padding: 10px 0;
+}
+form label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+form input, form textarea {
+  display: block;
+}
+form input[type="submit"] {
+  background: #60b4d0;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+}
+form input[type="submit"]:hover {
+  background: #4d90a6;
+}
+form p {
+  margin-bottom: 10px;
+}
+form p.form-submit {
+  padding-top: 10px;
 }
 
 html {
@@ -432,7 +519,7 @@ and open the template in the editor.
     Created on : 06-Aug-2014, 08:41:17
     Author     : andrew.cocker
 */
-.span1, .span2, .span3, .span4, .home #content #work-row .ajax-load-more-wrap ul li, .span5, .span6, header.site-header .site-branding .site-title, header.site-header .site-branding .site-description, .span7, .span8, .span9, .span10, .span11, .span12, .home #content #blog-row .ajax-load-more-wrap ul li {
+.span1, .span2, .span3, .single-post #content #primary .post-sidebar, .span4, .home #content #work-row .ajax-load-more-wrap ul li, .span5, .span6, header.site-header .site-branding .site-title, header.site-header .site-branding .site-description, .span7, .span8, .span9, .single-post #content #primary .site-main#main, .span10, .span11, .span12, .home #content #blog-row .ajax-load-more-wrap ul li {
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -441,11 +528,19 @@ and open the template in the editor.
 }
 
 @media all and (min-width: 50em) {
-  .col, .home #content #work-row .ajax-load-more-wrap ul li {
+  .col, .single-post #content #primary .site-main#main, .single-post #content #primary .post-sidebar, .home #content #work-row .ajax-load-more-wrap ul li {
     margin-left: 1%;
   }
+
+  .col-large {
+    margin-left: 5%;
+  }
 }
-.col:first-child, .home #content #work-row .ajax-load-more-wrap ul li:first-child {
+.col:first-child, .single-post #content #primary .site-main#main:first-child, .single-post #content #primary .post-sidebar:first-child, .home #content #work-row .ajax-load-more-wrap ul li:first-child {
+  margin-left: 0;
+}
+
+.col-large:first-child {
   margin-left: 0;
 }
 
@@ -458,7 +553,7 @@ and open the template in the editor.
     width: 15.83333%;
   }
 
-  .span3 {
+  .span3, .single-post #content #primary .post-sidebar {
     width: 24.25%;
   }
 
@@ -482,7 +577,7 @@ and open the template in the editor.
     width: 66.33333%;
   }
 
-  .span9 {
+  .span9, .single-post #content #primary .site-main#main {
     width: 74.75%;
   }
 
@@ -499,14 +594,14 @@ and open the template in the editor.
     margin-left: 0;
   }
 }
-.cf, header.site-header .site-branding, .home #content #work-row .ajax-load-more-wrap .alm-reveal {
+.cf, header.site-header .site-branding, .single-post #content, .home #content #work-row .ajax-load-more-wrap .alm-reveal {
   zoom: 1;
 }
-.cf:before, header.site-header .site-branding:before, .home #content #work-row .ajax-load-more-wrap .alm-reveal:before, .cf:after, header.site-header .site-branding:after, .home #content #work-row .ajax-load-more-wrap .alm-reveal:after {
+.cf:before, header.site-header .site-branding:before, .single-post #content:before, .home #content #work-row .ajax-load-more-wrap .alm-reveal:before, .cf:after, header.site-header .site-branding:after, .single-post #content:after, .home #content #work-row .ajax-load-more-wrap .alm-reveal:after {
   content: "";
   display: table;
 }
-.cf:after, header.site-header .site-branding:after, .home #content #work-row .ajax-load-more-wrap .alm-reveal:after {
+.cf:after, header.site-header .site-branding:after, .single-post #content:after, .home #content #work-row .ajax-load-more-wrap .alm-reveal:after {
   clear: both;
 }
 
@@ -594,15 +689,15 @@ header.site-header .site-branding .site-description a {
   padding-left: 10%;
   padding-right: 10%;
 }
-#content #primary #main > .cf, #content #primary header.site-header #main > .site-branding, header.site-header #content #primary #main > .site-branding, .home #content #primary #work-row .ajax-load-more-wrap #main > .alm-reveal, .home #content #work-row .ajax-load-more-wrap #primary #main > .alm-reveal {
+#content #primary #main > .cf, #content #primary header.site-header #main > .site-branding, header.site-header #content #primary #main > .site-branding, #content #primary .single-post #main > #content, .single-post #content #primary #main > #content, .home #content #primary #work-row .ajax-load-more-wrap #main > .alm-reveal, .home #content #work-row .ajax-load-more-wrap #primary #main > .alm-reveal {
   margin-bottom: 40px;
 }
 @media all and (min-width: 50em) {
-  #content #primary #main > .cf, #content #primary header.site-header #main > .site-branding, header.site-header #content #primary #main > .site-branding, .home #content #primary #work-row .ajax-load-more-wrap #main > .alm-reveal, .home #content #work-row .ajax-load-more-wrap #primary #main > .alm-reveal {
+  #content #primary #main > .cf, #content #primary header.site-header #main > .site-branding, header.site-header #content #primary #main > .site-branding, #content #primary .single-post #main > #content, .single-post #content #primary #main > #content, .home #content #primary #work-row .ajax-load-more-wrap #main > .alm-reveal, .home #content #work-row .ajax-load-more-wrap #primary #main > .alm-reveal {
     margin-bottom: 60px;
   }
 }
-#content #primary #main > .cf:last-of-type, #content #primary header.site-header #main > .site-branding:last-of-type, header.site-header #content #primary #main > .site-branding:last-of-type, .home #content #primary #work-row .ajax-load-more-wrap #main > .alm-reveal:last-of-type, .home #content #work-row .ajax-load-more-wrap #primary #main > .alm-reveal:last-of-type {
+#content #primary #main > .cf:last-of-type, #content #primary header.site-header #main > .site-branding:last-of-type, header.site-header #content #primary #main > .site-branding:last-of-type, #content #primary .single-post #main > #content:last-of-type, .single-post #content #primary #main > #content:last-of-type, .home #content #primary #work-row .ajax-load-more-wrap #main > .alm-reveal:last-of-type, .home #content #work-row .ajax-load-more-wrap #primary #main > .alm-reveal:last-of-type {
   margin-bottom: 0;
 }
 @media all and (min-width: 50em) {
@@ -611,35 +706,70 @@ header.site-header .site-branding .site-description a {
     padding-right: 15%;
   }
 }
+@media all and (min-width: 50em) {
+  #content {
+    padding-bottom: 80px;
+  }
+}
 
-footer {
+.single-post #content #primary .site-main#main {
+  margin-bottom: 40px;
+}
+@media all and (min-width: 50em) {
+  .single-post #content #primary .site-main#main {
+    margin-bottom: 0;
+  }
+}
+.single-post #content #primary .post-sidebar #secondary .widget_text {
+  margin-bottom: 10px;
+}
+.single-post #content #primary .post-sidebar #secondary .widget_recent_entries ul li {
+  margin-bottom: 5px;
+}
+.single-post #content #primary .post-sidebar #secondary .widget_recent_entries ul li span {
+  display: block;
+}
+.single-post #content #primary .post-sidebar .sidebar-contact {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+@media all and (min-width: 50em) {
+  .single-post #content #primary .post-sidebar {
+    padding-left: 20px;
+  }
+}
+
+footer.site-footer {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 10px;
   padding-bottom: 30px;
 }
 @media all and (min-width: 50em) {
-  footer {
+  footer.site-footer {
     padding-left: 15%;
     padding-right: 15%;
     padding-top: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
 }
 
 @media all and (min-width: 50em) {
-  .home #content .row .span3 {
+  .home #content .row .span3, .home .single-post #content .row #primary .post-sidebar, .single-post .home #content .row #primary .post-sidebar, .home .single-post #content #primary .row .post-sidebar, .single-post .home #content #primary .row .post-sidebar {
     text-align: right;
   }
 }
-.home #content .row .span3 h2 {
+.home #content .row .span3 h2, .home .single-post #content .row #primary .post-sidebar h2, .single-post .home #content .row #primary .post-sidebar h2, .home .single-post #content #primary .row .post-sidebar h2, .single-post .home #content #primary .row .post-sidebar h2 {
   margin-bottom: 20px;
 }
 @media all and (min-width: 50em) {
-  .home #content .row .span3 h2 {
+  .home #content .row .span3 h2, .home .single-post #content .row #primary .post-sidebar h2, .single-post .home #content .row #primary .post-sidebar h2, .home .single-post #content #primary .row .post-sidebar h2, .single-post .home #content #primary .row .post-sidebar h2 {
     margin-right: 40px;
     margin-bottom: 0;
   }
+}
+.home #content .row .span9 section h2, .home .single-post #content .row #primary .site-main#main section h2, .single-post .home #content .row #primary .site-main#main section h2, .home .single-post #content #primary .row .site-main#main section h2, .single-post .home #content #primary .row .site-main#main section h2 {
+  display: none;
 }
 .home #content .row .alm-btn-wrap button {
   border-left: none;
@@ -652,6 +782,10 @@ footer {
 .home #content .row .alm-btn-wrap button:after {
   content: "+";
   margin-left: 10px;
+}
+.home #content .row .alm-btn-wrap button.done {
+  cursor: default;
+  display: none;
 }
 @media all and (min-width: 50em) {
   .home #content #work-row .ajax-load-more-wrap .alm-reveal {
@@ -693,18 +827,18 @@ footer {
     margin-bottom: 0;
   }
 }
-.home #content #skills-row .span9 ul {
+.home #content #skills-row .span9 ul, .home .single-post #content #skills-row #primary .site-main#main ul, .single-post .home #content #skills-row #primary .site-main#main ul, .home .single-post #content #primary #skills-row .site-main#main ul, .single-post .home #content #primary #skills-row .site-main#main ul {
   margin-bottom: 10px;
 }
-.home #content #skills-row .span9 ul li {
+.home #content #skills-row .span9 ul li, .home .single-post #content #skills-row #primary .site-main#main ul li, .single-post .home #content #skills-row #primary .site-main#main ul li, .home .single-post #content #primary #skills-row .site-main#main ul li, .single-post .home #content #primary #skills-row .site-main#main ul li {
   display: inline;
 }
-.home #content #skills-row .span9 ul li:last-of-type:after {
+.home #content #skills-row .span9 ul li:last-of-type:after, .home .single-post #content #skills-row #primary .site-main#main ul li:last-of-type:after, .single-post .home #content #skills-row #primary .site-main#main ul li:last-of-type:after, .home .single-post #content #primary #skills-row .site-main#main ul li:last-of-type:after, .single-post .home #content #primary #skills-row .site-main#main ul li:last-of-type:after {
   content: '';
   padding-left: 0;
   margin-right: 0;
 }
-.home #content #skills-row .span9 ul li:after {
+.home #content #skills-row .span9 ul li:after, .home .single-post #content #skills-row #primary .site-main#main ul li:after, .single-post .home #content #skills-row #primary .site-main#main ul li:after, .home .single-post #content #primary #skills-row .site-main#main ul li:after, .single-post .home #content #primary #skills-row .site-main#main ul li:after {
   content: '/';
   color: #959a9e;
   padding-left: 10px;
@@ -727,6 +861,92 @@ footer {
 .home #content #blog-row .ajax-load-more-wrap ul li p.entry-meta {
   color: #959a9e;
   display: block;
+}
+.home #content #about-row .span9 p, .home .single-post #content #about-row #primary .site-main#main p, .single-post .home #content #about-row #primary .site-main#main p, .home .single-post #content #primary #about-row .site-main#main p, .single-post .home #content #primary #about-row .site-main#main p {
+  margin-bottom: 10px;
+}
+.home #content #instagram-row .span4, .home #content #instagram-row #work-row .ajax-load-more-wrap ul li, .home #content #work-row .ajax-load-more-wrap ul #instagram-row li, .home #content #instagram-row .span2 {
+  margin-bottom: 20px;
+}
+@media all and (min-width: 50em) {
+  .home #content #instagram-row .span4, .home #content #instagram-row #work-row .ajax-load-more-wrap ul li, .home #content #work-row .ajax-load-more-wrap ul #instagram-row li, .home #content #instagram-row .span2 {
+    margin-bottom: 0;
+  }
+}
+@media all and (max-width: 50em) {
+  .home #content #instagram-row .span2 {
+    width: 48%;
+  }
+}
+.home #content #instagram-row .span2.med-col {
+  margin-right: 4%;
+}
+@media all and (min-width: 50em) {
+  .home #content #instagram-row .span2.med-col {
+    margin-right: 0;
+  }
+}
+
+.single-post #content #primary #main article.post {
+  margin-bottom: 40px;
+}
+.single-post #content #primary #main article.post .entry-content {
+  margin-bottom: 30px;
+}
+.single-post #content #primary #main article.post .entry-content .work-image-container {
+  margin-bottom: 20px;
+}
+.single-post #content #primary #main article.post .entry-content .work-image-container .col, .single-post #content #primary #main article.post .entry-content .work-image-container .site-main#main, .single-post #content #primary #main article.post .entry-content .work-image-container .post-sidebar, .single-post .home #content #primary #main article.post .entry-content .work-image-container #work-row .ajax-load-more-wrap ul li, .home .single-post #content #primary #main article.post .entry-content .work-image-container #work-row .ajax-load-more-wrap ul li, .single-post .home #content #work-row .ajax-load-more-wrap ul #primary #main article.post .entry-content .work-image-container li, .home .single-post #content #work-row .ajax-load-more-wrap ul #primary #main article.post .entry-content .work-image-container li {
+  margin-bottom: 10px;
+}
+.single-post #content #primary #main article.post .entry-content p {
+  margin-bottom: 10px;
+}
+.single-post #content #primary #main article.post .entry-content img {
+  height: auto;
+}
+.single-post #content #primary #main article.post .entry-content ul {
+  list-style: disc;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+.single-post #content #primary #main article.post .entry-content ul li {
+  font-style: italic;
+}
+.single-post #content #primary #main article.post .entry-footer {
+  color: #959a9e;
+}
+.single-post #content #primary #main article.post .entry-footer .posted-on .updated {
+  display: none;
+}
+.single-post #content #primary #main nav.navigation {
+  margin-bottom: 40px;
+}
+.single-post #content #primary #main nav.navigation .nav-links .nav-previous, .single-post #content #primary #main nav.navigation .nav-links .nav-next {
+  display: inline-block;
+}
+.single-post #content #primary #main nav.navigation .nav-links .nav-previous {
+  margin-right: 10px;
+}
+.single-post #content #primary #main div.comments-area {
+  border-top: 1px dashed #cbc2ac;
+  margin-top: 20px;
+  padding-top: 30px;
+}
+.single-post #content #primary .post-sidebar #secondary .widget_text .textwidget {
+  font-weight: 700;
+}
+.single-post #content #primary .post-sidebar #secondary .widget_recent_entries h1 {
+  display: none;
+}
+.single-post #content #primary .post-sidebar #secondary .widget_recent_entries span {
+  color: #959a9e;
+}
+.single-post #content #primary .post-sidebar .sidebar-contact {
+  border-top: 1px dashed #cbc2ac;
+}
+.single-post #content #primary .post-sidebar .sidebar-contact p:first-of-type {
+  margin-bottom: 5px;
 }
 
 .alm-listing {

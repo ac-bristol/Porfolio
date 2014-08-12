@@ -110,9 +110,57 @@ header.site-header {
       padding-right:15%;
     }
   }
+  @media all and (min-width: 50em) {
+    padding-bottom:80px;
+  }
 }
 
-footer {
+.single-post {
+  #content {
+    @extend .cf;
+    #primary {
+      .site-main#main {
+        @extend .span9;
+        @extend .col;
+        margin-bottom:40px;
+        @media all and (min-width: 50em) {
+          margin-bottom:0;
+        }
+      }
+      .post-sidebar {
+        @extend .span3;
+        @extend .col;
+        #secondary {
+          .widget_text {
+            margin-bottom:10px;
+          }
+          .widget_recent_entries {
+            ul {
+              li{ 
+                margin-bottom:5px;
+                a, span {
+                  
+                }
+                span {
+                  display:block;
+                }
+              }
+            }
+          }
+        }
+        .sidebar-contact {
+          margin-top:20px;
+          padding-top:20px;
+        }
+        @media all and (min-width: 50em) {
+          padding-left:20px;
+        }
+      }
+    }
+  }
+}
+
+footer.site-footer {
   padding-left:10%;
   padding-right:10%;
   padding-top:10px;
@@ -124,6 +172,6 @@ footer {
     padding-left:15%;
     padding-right:15%;
     padding-top:20px;
-    padding-bottom:60px;
+    padding-bottom:40px;
   }
 }

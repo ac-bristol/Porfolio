@@ -26,7 +26,15 @@ get_header(); ?>
 		<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
+    <sidebar class="post-sidebar" role="sidebar">
+       <?php get_sidebar(); ?>
+      <div class="sidebar-contact">
+        <p>All content is written by Andrew Cocker, front-end developer living in Bristol, UK.</p>
+        <p>Tweet me <a href="https://twitter.com/cre8ive_block">@cre8ive_block</a>, check out my code at <a href="https://github.com/ac-bristol">github</a> or <a href="mailto:me@andrew-cocker.co.uk">email me</a>.
+      </div>
+    </sidebar>
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
+  
 <?php get_footer(); ?>

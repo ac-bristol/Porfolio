@@ -12,7 +12,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-      <p>&copy; Andrew Cocker 2014   |   <a href="mailto:me@andrew-cocker.co.uk">me@andrew-cocker.co.uk</a></p>
+      <p>&copy; Andrew Cocker 2014&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="mailto:me@andrew-cocker.co.uk">me@andrew-cocker.co.uk</a></p>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
