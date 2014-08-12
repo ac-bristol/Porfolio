@@ -38,7 +38,7 @@
       $('#home-intro').show();
     }
     
-  }
+  };
 
   // set initial div height / width
   var setIntroHeight = function(){
@@ -50,7 +50,14 @@
         'height': winHeight
     });
     
-  }
+  };
+  
+  var addHeader = function(){
+    $("section.ajax-load-more-wrap")
+            .prepend("<h2>header</h2>")
+            .removeAttr("id");
+  };
+  
   var goTo = function() {
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -64,11 +71,12 @@
         }
       } 
     });
-  }
+  };
   
   $( window ).load(function() {
     setIntroHeight();
     goTo();
+    addHeader();
     //cookieSet();
   });
 
