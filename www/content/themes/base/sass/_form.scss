@@ -9,6 +9,10 @@ form {
   }
   input,textarea {
     display:block;
+    width:100%;
+    @media all and (min-width: 50em) {
+      width:auto;
+    }
   }
   input[type="submit"] {
     background:$light-blue;

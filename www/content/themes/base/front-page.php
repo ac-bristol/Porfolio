@@ -19,7 +19,7 @@ get_header(); ?>
           <h2 class="home-col-header">Recent work</h2>
         </div>
         <div class="span9 col">
-           <?php echo do_shortcode('[ajax_load_more repeater="new" post_type="post" category="work" order="DESC" posts_per_page="3" scroll="false" transition="fade" button_label="See more work"]'); ?>
+           <?php echo do_shortcode('[ajax_load_more repeater="new" post_type="post" category="work" order="DESC" posts_per_page="3" scroll="false" max-pages="2" transition="fade" button_label="See more work"]'); ?>
           
         </div>
       </div>
