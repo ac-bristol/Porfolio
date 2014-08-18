@@ -21,10 +21,17 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-    <p class="post-cat">Category: <?php
+    <?php
+    // Get the ID of a given category
+    $category_id = get_cat_ID( 'work' );
+
+    // Get the URL of this category
+    $category_link = get_category_link( $category_id );
+?>
+    <p class="post-cat">Category: <?php if(get_the_category() === "work") { ?> <a href="/work" title="work"> <?php } else { ?><a href="/blog" title="blog"><?php } ?><?php
     $category = get_the_category(); 
     echo $category[0]->cat_name;
-    ?></p>
+    ?></a></p>
 		<?php base_posted_on(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
