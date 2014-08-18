@@ -236,6 +236,24 @@
           border-top:1px dashed $dark-beige;
           margin-top:20px;
           padding-top:30px;
+          p.comments-title {
+            font-weight:bold;
+            margin-bottom:20px;
+            span {
+              font-weight:bold;
+              font-style:italic;
+            }
+          }
+          ol.comment-list {
+            margin-bottom:30px;
+            li {
+              margin-bottom:20px;
+            }
+            .comment-content {
+              margin-top:5px;
+              margin-bottom:5px;
+            }
+          }
         }
       }
       .post-sidebar {

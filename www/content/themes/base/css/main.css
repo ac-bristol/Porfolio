@@ -471,6 +471,12 @@ form label {
 }
 form input, form textarea {
   display: block;
+  width: 100%;
+}
+@media all and (min-width: 50em) {
+  form input, form textarea {
+    width: auto;
+  }
 }
 form input[type="submit"] {
   background: #60b4d0;
@@ -932,6 +938,24 @@ footer.site-footer {
   border-top: 1px dashed #cbc2ac;
   margin-top: 20px;
   padding-top: 30px;
+}
+.single-post #content #primary #main div.comments-area p.comments-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.single-post #content #primary #main div.comments-area p.comments-title span {
+  font-weight: bold;
+  font-style: italic;
+}
+.single-post #content #primary #main div.comments-area ol.comment-list {
+  margin-bottom: 30px;
+}
+.single-post #content #primary #main div.comments-area ol.comment-list li {
+  margin-bottom: 20px;
+}
+.single-post #content #primary #main div.comments-area ol.comment-list .comment-content {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .single-post #content #primary .post-sidebar #secondary .widget_text .textwidget {
   font-weight: 700;
