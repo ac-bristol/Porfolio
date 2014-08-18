@@ -17,9 +17,9 @@ get_header(); ?>
 			<header class="page-header">
 				<h1 class="page-title">
 					<?php
-						if ( is_category() ) :
-							single_cat_title();
-
+						if ( is_category() ) : ?>
+							<?php single_cat_title('All ');; ?>
+            <?php
 						elseif ( is_tag() ) :
 							single_tag_title();
 
@@ -85,7 +85,7 @@ get_header(); ?>
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'content', get_post_format() );
+					get_template_part( 'content', 'short' );
 				?>
 
 			<?php endwhile; ?>
@@ -101,5 +101,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

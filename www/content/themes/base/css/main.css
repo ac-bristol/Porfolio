@@ -973,6 +973,64 @@ footer.site-footer {
   margin-bottom: 5px;
 }
 
+body.archive #content #primary #main.site-main .page-header h1.page-title {
+  margin-bottom: 20px;
+}
+body.archive #content #primary #main.site-main > article {
+  border-bottom: 1px dashed #cbc2ac;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+body.archive #content #primary #main.site-main > article .entry-header {
+  margin-bottom: 10px;
+}
+body.archive #content #primary #main.site-main > article .entry-content p {
+  display: none;
+}
+body.archive #content #primary #main.site-main > article .entry-content p:first-of-type {
+  display: block;
+}
+body.archive #content #primary #main.site-main > article .entry-content p:nth-of-type(2) {
+  display: block;
+}
+body.archive #content #primary #main.site-main > article .entry-content p:nth-of-type(3) {
+  display: block;
+}
+body.archive #content #primary #main.site-main > article .entry-content img {
+  display: none;
+}
+body.archive #content #primary #main.site-main > article .entry-content ul, body.archive #content #primary #main.site-main > article .entry-content ol {
+  display: none;
+}
+body.archive #content #primary #main.site-main > article .entry-content a.page-link {
+  margin-top: 10px;
+}
+body.archive #content #primary #main.site-main > article .entry-footer {
+  display: none;
+}
+body.archive #content #primary #main.site-main > article.category-blog .entry-content p {
+  display: none;
+}
+body.archive #content #primary #main.site-main > article.category-blog .entry-content p:first-of-type {
+  display: block;
+}
+body.archive #content #primary #main.site-main > article.category-blog .entry-content p:nth-of-type(2) {
+  display: none;
+}
+body.archive #content #primary #main.site-main > article.category-blog .entry-content p:nth-of-type(3) {
+  display: none;
+}
+body.archive #content #primary #main.site-main > article.category-blog .entry-footer {
+  display: block;
+}
+
+.error404 #content #primary #main.site-main .page-header h1.page-title {
+  margin-bottom: 20px;
+}
+.error404 #content #primary #main.site-main .page-content p {
+  margin-bottom: 30px;
+}
+
 .alm-listing {
   margin: 0;
   padding: 0;

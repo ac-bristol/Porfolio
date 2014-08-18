@@ -291,6 +291,97 @@
   }
 }
 
+//ARCHIVE PAGES
+
+body.archive {
+  #content {
+    #primary {
+      #main.site-main {
+        .page-header {
+          h1.page-title {
+            margin-bottom:20px;
+          }
+        }
+        
+        & > article {
+          border-bottom: 1px dashed #cbc2ac;
+          padding-bottom:20px;
+          margin-bottom:20px;
+          .entry-header {
+            margin-bottom:10px;
+          }
+          .entry-content {
+            p {
+              display:none;
+              &:first-of-type {
+                display:block;
+              }
+              &:nth-of-type(2){ 
+                display:block;
+              }
+              &:nth-of-type(3){  
+                display:block;
+              }
+            }
+            img {
+              display:none;
+            }
+            ul,ol {
+              display:none;
+            }
+            a.page-link {
+              margin-top:10px;
+            }
+          }
+          .entry-footer {
+            display:none;
+          }
+        }
+        & > article.category-blog {
+          .entry-content {
+            p {
+              display:none;
+              &:first-of-type {
+                display:block;
+              }
+              &:nth-of-type(2){ 
+                display:none;
+              }
+              &:nth-of-type(3){  
+                display:none;
+              }
+            }
+          }
+          .entry-footer {
+            display:block;
+          }
+        }
+      }
+    }
+  }
+}
+
+//ERROR 404 PAGE
+
+.error404 {
+  #content {
+    #primary {
+      #main.site-main {
+        .page-header {
+          h1.page-title {
+            margin-bottom:20px;
+          }
+        }
+        .page-content {
+          p {
+            margin-bottom:30px;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 .alm-listing{
 	margin: 0;
