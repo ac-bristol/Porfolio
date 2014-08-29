@@ -1,14 +1,17 @@
 module.exports = function(grunt) {
   var jsFileList = [
     //'js/libs/responsiveslides.min.js',
-    'js/libs/respond.min.js'
+    //'js/libs/respond.min.js',
+    'js/libs/underscore-min.js',
+    'js/libs/backbone-min.js',
+    'js/libs/backbone-store.js'
   ];
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     concat: {
       options: {
-        stripBanners: true,
+        stripBanners: false,
         banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
           '<%= grunt.template.today("yyyy-mm-dd") %> */',
       },
